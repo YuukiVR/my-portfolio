@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Selected works by Nino Diaz, including AI video creation and virtual support projects."
+    />
+    <title>My Works | Nino Diaz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="works.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero works-hero" aria-labelledby="works-title">
+        <p class="eyebrow">Selected work</p>
+        <h1 id="works-title">My works</h1>
+        <p class="works-intro">
+          A growing collection of practical projects, creative experiments, and systems
+          built to make digital work clearer and more effective.
+        </p>
+      </section>
+
+      <section class="section works-section" aria-label="Portfolio categories">
+        <div class="work-tabs" role="tablist" aria-label="Work categories">
+          <button class="work-tab" id="tab-ai-video" type="button" role="tab" aria-selected="true" aria-controls="panel-ai-video">
+            AI Video Creation
+          </button>
+          <button class="work-tab" id="tab-other" type="button" role="tab" aria-selected="false" aria-controls="panel-other" tabindex="-1">
+            Other work
+          </button>
+        </div>
+
+        <div class="work-panel" id="panel-ai-video" role="tabpanel" aria-labelledby="tab-ai-video">
+          <div class="work-grid">
+            <article class="work-card">
+              <div>
+                <div class="work-placeholder">Video preview will be added here</div>
+                <h3>AI video project one</h3>
+                <p>A space for a short description of the concept, tools, and result.</p>
+              </div>
+              <p class="eyebrow">Coming soon</p>
+            </article>
+            <article class="work-card">
+              <div>
+                <div class="work-placeholder">Video preview will be added here</div>
+                <h3>AI video project two</h3>
+                <p>A space for a short description of the concept, tools, and result.</p>
+              </div>
+              <p class="eyebrow">Coming soon</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="work-panel" id="panel-other" role="tabpanel" aria-labelledby="tab-other" hidden>
+          <div class="work-grid">
+            <article class="work-card">
+              <div>
+                <div class="work-placeholder">Project preview will be added here</div>
+                <h3>More work soon</h3>
+                <p>Additional portfolio categories can be added here when the projects are ready.</p>
+              </div>
+              <p class="eyebrow">Coming soon</p>
+            </article>
+          </div>
+        </div>
+
+        <a class="text-link back-link" href="index.html">← Back to homepage</a>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 Nino Diaz</p>
+    </footer>
+  </body>
+</html>
