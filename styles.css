@@ -85,6 +85,7 @@ h1 {
 }
 
 .hero-note {
+  display: block;
   width: fit-content;
   max-width: 100%;
   padding: 12px 16px;
