@@ -1,6 +1,8 @@
 # AI Image Generation Gallery
 
-Drop the images you want to feature in this folder.
+Create a subfolder for each AI image project and place its images inside that project folder.
+
+Current project folder: `mustang-product/`
 
 Recommended formats:
 
@@ -8,4 +10,4 @@ Recommended formats:
 - `.png` for transparent artwork
 - `.webp` for smaller web-ready images
 
-After adding the images, we will connect them to the gallery in `works.html` before pushing the changes to GitHub.
+After adding images, connect them to the appropriate gallery in `works.html` before pushing changes to GitHub.
