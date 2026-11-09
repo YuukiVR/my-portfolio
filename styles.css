@@ -411,6 +411,14 @@ nav {
   display: flex;
   width: 100%;
   max-width: none;
+  gap: clamp(48px, 8vw, 120px);
+  align-items: flex-end;
+}
+
+.hero-identity,
+.hero-introduction {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .hero-identity h1 {
@@ -424,8 +432,9 @@ nav {
 }
 
 .hero-introduction {
-  max-width: 480px;
-  margin-top: 48px;
+  max-width: none;
+  margin-top: 0;
+  padding-bottom: 12px;
 }
 
 .hero-introduction .hero-title {
@@ -439,6 +448,13 @@ nav {
   letter-spacing: 0.06em;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.hero-introduction .hero-copy {
+  max-width: none;
+  margin-bottom: 44px;
+  white-space: nowrap;
+  font-size: clamp(0.68rem, 1vw, 1rem);
 }
 
 .hero-introduction .hero-copy {
@@ -638,6 +654,12 @@ footer {
 
   .hero-introduction {
     margin-top: 72px;
+    padding-bottom: 0;
+  }
+
+  .hero-introduction .hero-copy {
+    white-space: normal;
+    font-size: 1rem;
   }
 
   .works-heading h1 {
