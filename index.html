@@ -17,6 +17,7 @@
           <a class="brand-mark" href="index.html" aria-label="Nino Diaz home">ND</a>
           <nav aria-label="Main navigation">
             <a href="works.html">My Works</a>
+            <a href="#contact">Contact</a>
           </nav>
         </header>
 
@@ -99,6 +100,39 @@
           This homepage is a starting point. More details about projects, services, and ways
           to connect can be added as the portfolio grows.
         </p>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Start a conversation</p>
+          <h2 id="contact-title">Have a project in mind?</h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <p class="contact-copy">
+              Tell me what you are working on, what needs organizing, or where you would
+              like an extra pair of hands.
+            </p>
+            <p class="contact-email">nino.pdiaz@gmail.com</p>
+          </div>
+          <form class="contact-form" action="https://formsubmit.co/nino.pdiaz@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New portfolio inquiry for Nino Diaz" />
+            <input type="hidden" name="_next" value="https://yuukivr.github.io/my-portfolio/" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot" />
+
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me a little about your project" required></textarea>
+
+            <button type="submit">Send message <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
