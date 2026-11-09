@@ -408,7 +408,9 @@ nav {
 }
 
 .hero-grid {
-  max-width: 760px;
+  display: flex;
+  width: 100%;
+  max-width: none;
 }
 
 .hero-identity h1 {
