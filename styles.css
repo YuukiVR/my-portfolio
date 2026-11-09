@@ -161,7 +161,7 @@ h1 {
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 0;
 }
 
 .gallery-card {
