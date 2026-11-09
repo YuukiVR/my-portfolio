@@ -407,10 +407,7 @@ nav {
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
-  gap: 80px;
-  align-items: end;
+  max-width: 760px;
 }
 
 .hero-identity h1 {
@@ -425,7 +422,7 @@ nav {
 
 .hero-introduction {
   max-width: 480px;
-  padding-bottom: 12px;
+  margin-top: 48px;
 }
 
 .hero-introduction .hero-title {
