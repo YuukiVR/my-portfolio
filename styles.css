@@ -409,6 +409,7 @@ nav {
 
 .hero-grid {
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: none;
   gap: clamp(48px, 8vw, 120px);
