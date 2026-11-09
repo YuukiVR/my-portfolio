@@ -433,6 +433,14 @@ nav {
   line-height: 1.1;
 }
 
+.hero-introduction .hero-specialties {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
 .hero-introduction .hero-copy {
   font-size: 1rem;
 }
