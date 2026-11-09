@@ -200,6 +200,44 @@ h1 {
   object-fit: cover;
 }
 
+[data-zoomable] {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 48px;
+  background: var(--ink);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox img {
+  display: block;
+  max-width: min(1200px, 100%);
+  max-height: calc(100vh - 96px);
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  border: 0;
+  background: transparent;
+  color: var(--paper);
+  cursor: pointer;
+  font: inherit;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
 .gallery-empty {
   grid-column: 1 / -1;
   min-height: 280px;
@@ -435,6 +473,14 @@ footer p {
 
   .image-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .lightbox {
+    padding: 24px;
+  }
+
+  .lightbox img {
+    max-height: calc(100vh - 48px);
   }
 
   .service-card {
