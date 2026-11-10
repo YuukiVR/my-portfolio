@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AcoustiPads Gallery — a static vehicle installation gallery by Nino Diaz. Searchable categories, auto-generated catalog, and GitHub Pages deployment."
+    />
+    <title>AcoustiPads Gallery | Nino Diaz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="nav.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- ===== Hero ===== -->
+      <section class="hero project-hero" aria-labelledby="project-title">
+        <header class="site-header">
+          <a class="brand-mark" href="index.html" aria-label="Nino Diaz home">ND</a>
+          <nav aria-label="Main navigation">
+            <a href="works.html">My Works</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">Projects <span aria-hidden="true">▾</span></button>
+              <ul class="nav-submenu">
+                <li><a href="project.html" aria-current="page">AcoustiPads</a></li>
+                <li><a href="landing.html">Digital Product Template</a></li>
+              </ul>
+            </div>
+            <a href="index.html#contact">Contact</a>
+          </nav>
+        </header>
+
+        <div class="project-heading">
+          <p class="eyebrow">Web Development · Case Study</p>
+          <h1 id="project-title">AcoustiPads Gallery<span class="accent-dot">.</span></h1>
+          <p class="works-intro">
+            A static website that turns hundreds of vehicle soundproofing photos
+            into a searchable gallery — organized by body type, powered by a
+            build script, and deployed on GitHub Pages.
+          </p>
+          <div class="project-actions">
+            <a class="btn-primary" href="https://yuukivr.github.io/acoustipads" target="_blank" rel="noreferrer">
+              Visit live site <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn-ghost" href="https://github.com/YuukiVR/acoustipads" target="_blank" rel="noreferrer">
+              View source on GitHub
+            </a>
+          </div>
+        </div>
+
+        <dl class="project-meta" aria-label="Project details">
+          <div>
+            <dt>Role</dt>
+            <dd>Design &amp; development</dd>
+          </div>
+          <div>
+            <dt>Stack</dt>
+            <dd>HTML · CSS · Vanilla JS · Node</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Live on GitHub Pages</dd>
+          </div>
+          <div>
+            <dt>Year</dt>
+            <dd>2026</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ===== Live preview ===== -->
+      <section class="section" aria-labelledby="preview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Live preview</p>
+          <h2 id="preview-title">See it in action.</h2>
+        </div>
+
+        <div class="preview-frame">
+          <div class="preview-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <code>yuukivr.github.io/acoustipads</code>
+          </div>
+          <div class="preview-body">
+            <p class="preview-title">Vehicle Installation Gallery</p>
+            <p>
+              Browse hundreds of completed soundproofing projects organized
+              by vehicle body type — search a vehicle, open a category, and
+              view the installation photos full-screen.
+            </p>
+            <div class="preview-categories" aria-hidden="true">
+              <span>Crossover · 11 photos</span>
+              <span>Hatchback · coming soon</span>
+              <span>SUV · coming soon</span>
+            </div>
+            <a class="text-link" href="https://yuukivr.github.io/acoustipads" target="_blank" rel="noreferrer">
+              Open the live gallery <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Overview ===== -->
+      <section class="section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">A gallery that grows by dropping in photos.</h2>
+        </div>
+        <div class="project-copy">
+          <p>
+            AcoustiPads Services needed a simple public gallery for completed
+            vehicle soundproofing installations. Visitors should be able to
+            find work by vehicle body type — crossover, hatchback, SUV — and
+            browse the photos without wading through a messy folder dump.
+          </p>
+          <p>
+            I designed and built a lightweight static site: no database, no
+            CMS, no framework. The gallery index is generated automatically
+            from the image folders, so adding a new category or a new batch
+            of photos is as simple as dropping files into the right folder
+            and rebuilding.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== Problem ===== -->
+      <section class="section" aria-labelledby="problem-title">
+        <div class="section-heading">
+          <p class="eyebrow">The problem</p>
+          <h2 id="problem-title">Photos exist. A usable gallery doesn&rsquo;t.</h2>
+        </div>
+        <div class="project-copy">
+          <p>
+            Installation photos were piling up as raw camera files (HEIC/DNG
+            originals) with no structure. Potential customers had no easy way
+            to see what a finished job looks like for <em>their</em> vehicle
+            type, and updating a hand-coded HTML page for every new photo
+            wouldn&rsquo;t scale.
+          </p>
+          <ul class="check-list">
+            <li>No way to browse by vehicle type</li>
+            <li>No search — finding one vehicle meant scrolling everything</li>
+            <li>Manual HTML edits for every new photo</li>
+            <li>Heavy originals would make a naive page painfully slow</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Features ===== -->
+      <section class="section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">What I built</p>
+          <h2 id="features-title">Small features, all pulling weight.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <p class="service-number">01</p>
+            <h3>Live search</h3>
+            <p>
+              A search box in the hero filters categories as you type, so
+              &ldquo;crossover&rdquo; or &ldquo;hatch&rdquo; jumps straight to
+              the right gallery.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="service-number">02</p>
+            <h3>Category pages</h3>
+            <p>
+              Each body type gets its own page (<code>category.html</code>)
+              with a photo count and a clean grid — no endless scrolling.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="service-number">03</p>
+            <h3>Auto-generated catalog</h3>
+            <p>
+              A Node script scans <code>images/&lt;category&gt;/</code>, sorts
+              files numerically, and writes <code>gallery.json</code>. New
+              photos appear automatically.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="service-number">04</p>
+            <h3>Full-screen lightbox</h3>
+            <p>
+              Click any photo to view it enlarged, with a close button and
+              click-outside-to-close — same pattern as my portfolio lightbox.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="service-number">05</p>
+            <h3>Performance-minded</h3>
+            <p>
+              Lazy-loaded images, lightweight vanilla JS, and a recommendation
+              to convert HEIC/DNG originals to JPG/WebP before deploying.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="service-number">06</p>
+            <h3>Zero-cost hosting</h3>
+            <p>
+              Deployed to GitHub Pages via GitHub Actions (<code>npm run
+              build</code> on every push to <code>main</code>), with a
+              Netlify config as an alternative.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== How it works ===== -->
+      <section class="section" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2 id="workflow-title">Four steps from camera to website.</h2>
+        </div>
+        <ol class="workflow">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Drop photos in a folder</h3>
+              <p>Place converted JPG/WebP files in <code>images/crossover/</code>, <code>images/hatchback/</code>, or a new category folder.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Run the build</h3>
+              <p><code>npm run build</code> runs <code>scripts/generate-gallery.js</code>, which regenerates <code>gallery.json</code> with counts and thumbnails.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Push to main</h3>
+              <p>GitHub Actions runs the same build in CI and publishes the result to GitHub Pages automatically.</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3>Visitors browse &amp; search</h3>
+              <p>The homepage renders categories from <code>gallery.json</code>, search filters them live, and each category opens its own gallery page.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== Stack ===== -->
+      <section class="section" aria-labelledby="stack-title">
+        <div class="section-heading">
+          <p class="eyebrow">Tech stack</p>
+          <h2 id="stack-title">Deliberately boring tech.</h2>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-block">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5 — semantic hero, sections, and gallery markup</li>
+              <li>CSS3 — custom stylesheet, Poppins via Google Fonts</li>
+              <li>Vanilla JavaScript — category rendering, search, lightbox</li>
+              <li><code>gallery.json</code> — single data source for the whole gallery</li>
+            </ul>
+          </div>
+          <div class="stack-block">
+            <h3>Build &amp; deploy</h3>
+            <ul>
+              <li>Node — <code>scripts/generate-gallery.js</code> catalog builder</li>
+              <li>GitHub Pages + GitHub Actions — build &amp; publish on push</li>
+              <li>Netlify — <code>netlify.toml</code> kept as a fallback host</li>
+              <li><code>.nojekyll</code> — ensures generated files publish as-is</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Current state ===== -->
+      <section class="section" aria-labelledby="state-title">
+        <div class="section-heading">
+          <p class="eyebrow">Current state</p>
+          <h2 id="state-title">Live, with room to grow.</h2>
+        </div>
+        <div class="project-copy">
+          <p>
+            The gallery is live today with the <strong>Crossover</strong>
+            category populated (11 installation photos). Hatchback and SUV
+            categories are already wired up and show &ldquo;Images coming
+            soon&rdquo; placeholders — adding photos there requires no code
+            changes, just files + a rebuild.
+          </p>
+          <ul class="check-list">
+            <li><strong>Crossover</strong> — 11 photos, live</li>
+            <li><strong>Hatchback</strong> — structure ready, awaiting photos</li>
+            <li><strong>SUV</strong> — structure ready, awaiting photos</li>
+          </ul>
+          <p>
+            Planned next steps: convert remaining originals to WebP for
+            faster loads, add per-photo captions (vehicle model + work done),
+            and an SEO-friendly description per category.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="closing" aria-labelledby="cta-title">
+        <p class="eyebrow">Want something similar?</p>
+        <h2 id="cta-title">I can build &amp; maintain galleries like this.</h2>
+        <p>
+          Static sites, searchable catalogs, and simple build pipelines that
+          don&rsquo;t need a database — built to be updated by dropping in
+          files, not rewriting code.
+        </p>
+        <div class="project-actions">
+          <a class="btn-primary" href="index.html#contact">Start a conversation <span aria-hidden="true">→</span></a>
+          <a class="btn-ghost" href="works.html">← Back to all works</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Nino Diaz</p>
+      <div class="footer-links" aria-label="Social and professional links">
+        <a href="https://www.youtube.com/@oninjutsutv2686" target="_blank" rel="noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 6.2a2.9 2.9 0 0 0-2-2C18.7 3.7 12 3.7 12 3.7s-6.7 0-8.5.5a2.9 2.9 0 0 0-2 2C1 8 1 12 1 12s0 4 .5 5.8a2.9 2.9 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.9 2.9 0 0 0 2-2c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8ZM9.4 16.2V7.8l7.2 4.2-7.2 4.2Z" /></svg>YouTube</a>
+        <a href="https://www.onlinejobs.ph/jobseekers/info/972240" target="_blank" rel="noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.2 6.2h2V5a2 2 0 0 1 2-2h1.6a2 2 0 0 1 2 2v1.2h2A3.2 3.2 0 0 1 21 9.4v8.2a3.2 3.2 0 0 1-3.2 3.2H6.2A3.2 3.2 0 0 1 3 17.6V9.4a3.2 3.2 0 0 1 3.2-3.2Zm4-1.2v1.2h1.6V5h-1.6Zm-5.6 5.2v2.2c3.3 1.2 7.5 1.2 10.8 0v-2.2h-2v1.1H8.6v-1.1h-2Zm0 4.5v2.9c0 .5.4.9.9.9h11c.5 0 .9-.4.9-.9v-2.9c-3.8 1.2-9 1.2-12.8 0Z" /></svg>OnlineJobs.ph</a>
+        <a href="https://discordapp.com/users/670417993934569493" target="_blank" rel="noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 5.1A16.6 16.6 0 0 0 15.4 4l-.5 1.1a14.4 14.4 0 0 0-5.8 0L8.6 4a16.6 16.6 0 0 0-4.1 1.1C1.9 8.8 1.2 12.4 1.5 16a16.7 16.7 0 0 0 5 2.5l1.2-1.6c-.7-.3-1.3-.7-1.9-1.1l.5-.4c3.7 1.7 7.7 1.7 11.4 0l.5.4c-.6.4-1.2.8-1.9 1.1l1.2 1.6a16.7 16.7 0 0 0 5-2.5c.4-4.2-.7-7.8-3-10.9ZM8.7 14.2c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm6.6 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z" /></svg>Discord</a>
+      </div>
+    </footer>
+  </body>
+</html>
